@@ -4,9 +4,9 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.buttons.Button;
 
-public class JoystickContoller extends Joystick
+public class JoystickController extends Joystick
  {
-    public JoystickContoller(int port)
+    public JoystickController(int port)
     {
         super(port);
         b1 = new JoystickButton(this, 1);

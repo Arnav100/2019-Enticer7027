@@ -11,19 +11,19 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import frc.robot.commands.*;
 
-import frc.robot.util.JoystickContoller;
+import frc.robot.util.JoystickController;
 
 /**
  * This class is the glue that binds the controls on the physical operator
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
-    public JoystickContoller j0;
-    public JoystickContoller j1;
+    public JoystickController j0;
+    public JoystickController j1;
 
     public OI() {
-        j0 = new JoystickContoller(0);
-        j1 = new JoystickContoller(1);
+        j0 = new JoystickController(0);
+        j1 = new JoystickController(1);
 
         j1.b1.whileHeld(new RunIntake());
         j1.b2.whileHeld(new RunOuttake());
