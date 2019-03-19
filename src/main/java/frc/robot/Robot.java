@@ -57,4 +57,9 @@ public class Robot extends TimedRobot {
     Scheduler.getInstance().run();
     SmartDashboard.putNumber("Drive Buffer: ", driveTrain.buffer);
   }
+  
+ @Override
+ public void autonomousPeriodic() {
+    Scheduler.getInstance().run();
+ }
 }
